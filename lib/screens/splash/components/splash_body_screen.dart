@@ -1,5 +1,6 @@
 import 'package:dhb_shop/components/default_button.dart';
 import 'package:dhb_shop/constans.dart';
+import 'package:dhb_shop/screens/sign_in/sign_in_screen.dart';
 import 'package:dhb_shop/screens/splash/components/splash_content.dart';
 import 'package:dhb_shop/size_config.dart';
 import 'package:flutter/cupertino.dart';
@@ -70,7 +71,9 @@ class _SplashBodyScreenState extends State<SplashBodyScreen> {
                       ),
                       DefaultButton(
                         text: 'Continue',
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, SignInScreen.routeName);
+                        },
                       ),
                       Spacer(),
                     ],
